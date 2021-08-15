@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     public void showToast(View view) {
         Toast toast = Toast.makeText(this, R.string.toast_message,
                 Toast.LENGTH_SHORT);
-        toast.show();
+        toast.show("Hello");
     }
 
     /*
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
     */
     public void countUp(View view) {
         mCount++;
-        if (mShowCount != null)
+        if (mShowCount != 0)
             mShowCount.setText(Integer.toString(mCount));
     }
 }
